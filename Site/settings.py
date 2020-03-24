@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Site.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, "templates"],
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -80,6 +80,13 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'astusite@gmail.com'
+EMAIL_HOST_PASSWORD = 'pvbutcysriquqgmt'
+EMAIL_PORT = 587
+DEFAULT_FROM_EMAIL = 'AstuSite Team <noreply@astusite.com'
 
 
 # Password validation
