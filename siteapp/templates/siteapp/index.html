@@ -1,0 +1,192 @@
+{% extends 'siteapp/base_site.html' %}
+
+{% block content %}
+		<main class="container">
+        <div class="row m-auto">
+            {% comment %} {% for department in departments %}
+              <div class="col-3 card-hover">
+                  <div class="card height" >
+                    <div class="card-header">
+                      {{department.name}}
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">{{department.description}}</p>                          
+                    </div> 
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                      Courses
+                    </button>
+                    
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">{{department.name}}</h5>
+                          </div>
+                          <div class="modal-body">
+                            {% for course in department.courses %}
+                              <li class="list-group-item"><a href="#">{{course.name}}</a></li>
+                            {% endfor %}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            {% endfor %} {% endcomment %}
+            <div class="col-3 card-hover">
+                <div class="card height" >
+                  <div class="card-header">
+                    Department Name
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Description</p>
+                    
+                  </div> 
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    Courses
+                  </button>
+                  
+                  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">Department Name</h5>
+                        </div>
+                        <div class="modal-body">
+                          <li class="list-group-item"><a href="#">test</a></li>
+                          <li class="list-group-item"><a href="#">test</a></li>
+                          <li class="list-group-item"><a href="#">test</a></li>
+                          <li class="list-group-item"><a href="#">test</a></li>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+                        
+            <div class="col-3 card-hover">
+                <div class="card height" >
+                  <div class="card-header">
+                    Department Name
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Description</p>
+                    
+                  </div>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    Courses
+                  </button>
+                  
+                  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">Department Name</h5>
+                        </div>
+                        <div class="modal-body">
+                          <li class="list-group-item"><a href="#">test</a></li>
+                          <li class="list-group-item"><a href="#">test</a></li>
+                          <li class="list-group-item"><a href="#">test</a></li>
+                          <li class="list-group-item"><a href="#">test</a></li>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-3 card-hover">
+                <div class="card height" >
+                  <div class="card-header">
+                    Department Name
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Description</p>
+                    
+                  </div>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    Courses
+                  </button>
+                  
+                  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">Department Name</h5>
+                        </div>
+                        <div class="modal-body">
+                          <li class="list-group-item"><a href="#">test</a></li>
+                          <li class="list-group-item"><a href="#">test</a></li>
+                          <li class="list-group-item"><a href="#">test</a></li>
+                          <li class="list-group-item"><a href="#">test</a></li>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-3 card-hover">
+                <div class="card height" >
+                  <div class="card-header">
+                    Department Name
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Description</p>
+                    
+                  </div>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    Courses
+                  </button>
+                  
+                  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">Department Name</h5>
+                        </div>
+                        <div class="modal-body">
+                          <li class="list-group-item"><a href="#">test</a></li>
+                          <li class="list-group-item"><a href="#">test</a></li>
+                          <li class="list-group-item"><a href="#">test</a></li>
+                          <li class="list-group-item"><a href="#">test</a></li>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-3 card-hover">
+                <div class="card height" >
+                  <div class="card-header">
+                    Department Name
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Description</p>
+                    
+                  </div>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    Courses
+                  </button>
+                  
+                  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">Department Name</h5>
+                        </div>
+                        <div class="modal-body">
+                          <li class="list-group-item"><a href="#">test</a></li>
+                          <li class="list-group-item"><a href="#">test</a></li>
+                          <li class="list-group-item"><a href="#">test</a></li>
+                          <li class="list-group-item"><a href="#">test</a></li>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock  %}
